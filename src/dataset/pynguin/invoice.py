@@ -1,0 +1,17 @@
+#  This file is part of Pynguin.
+#
+#  SPDX-FileCopyrightText: 2019–2024 Pynguin Contributors
+#
+#  SPDX-License-Identifier: MIT
+#
+from pynguin.dataset.pynguin.large_test_cluster import *  # noqa: F403,F401
+
+
+def compute_sum(invoice: list[list[int]]) -> float | int:
+    for element in invoice:
+        element.append(42)
+        element.append(18)
+        if sum(element) > 100:
+            return 42
+        return 0
+    return 1.0
